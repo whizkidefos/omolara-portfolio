@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Image1 from '../img/portfolio/1.png';
-import Image2 from '../img/portfolio/2.png';
-import Image3 from '../img/portfolio/3.png';
-import Image4 from '../img/portfolio/4.png';
+import Wise from '../img/portfolio/wise.png';
+import ITFirm from '../img/portfolio/itfirm.png';
+import MedCareFoods from '../img/portfolio/medcarefoods.png';
+import Fintech from '../img/portfolio/fintech.png';
 
 import { Link } from 'react-router-dom';
 
@@ -24,31 +24,32 @@ const Portfolio = () => {
         <figure className="grid grid-cols-2 lg:gap-2">
           {/* Portfolio item */}
           <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={Image1} alt="portfolio preview" className='object-cover h-full lg-[220px] hover:scale-105 transition-all duration-500' />
+            <a href="https://www.behance.net/gallery/162270163/Wardrobewise-case-study-(fashion-store)" target="_blank" rel="noopener noreferrer">
+              <img src={Wise} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
 
           {/* Portfolio item */}
           <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={Image2} alt="portfolio preview" className='object-cover h-full lg-[220px] hover:scale-105 transition-all duration-500' />
+            <a href="https://www.behance.net/gallery/131739525/IT-firm-website-(-LUWANG-INDUSTRIES)" target="_blank" rel="noopener noreferrer">
+              <img src={ITFirm} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
 
           {/* Portfolio item */}
           <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={Image3} alt="portfolio preview" className='object-cover h-full lg-[220px] hover:scale-105 transition-all duration-500' />
+            <a href="https://www.behance.net/gallery/157556087/Medcare-case-study" target="_blank" rel="noopener noreferrer">
+              <img src={MedCareFoods} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
 
           {/* Portfolio item */}
           <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img src={Image4} alt="portfolio preview" className='object-cover h-full lg-[220px] hover:scale-105 transition-all duration-500' />
+            <a href="https://www.behance.net/gallery/125186599/Fintech-app-(Bank-app)" target="_blank" rel="noopener noreferrer">
+              <img src={Fintech} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
+
         </figure>
       </div>
     </div>
