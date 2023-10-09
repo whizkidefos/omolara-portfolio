@@ -12,8 +12,11 @@ const App = () => {
       <Router>
         <Header />
         <AnimRoutes />
-        {/* <Footer /> */}
+        <Footer />
       </Router>
+
+      {/* Cursor */}
+      <aside className="bg-primary w-[32px] h-[32px] fixed top-0 left-0 pointer-events-none z-50"></aside>
     </>
   );
 };

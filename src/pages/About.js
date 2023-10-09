@@ -2,16 +2,29 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Anita from '../img/about/anita-about.png';
 
+import { motion } from 'framer-motion';
+import { transition1 } from '../transitions';
+
 const About = () => {
   return (
-      <section className='section'>
-        <div className="container relative h-full mx-auto">
+      <motion.section 
+        initial={{ opacity: 0, y: '100%' }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: '100%' }}
+        transition={transition1}
+        className='section'>
+        <div className="container relative h-full pb-10 mx-auto">
           {/* About Banner wrapper */}
           <div className="flex flex-col items-center justify-center h-full text-center lg:flex-row gap-x-24 lg:text-left lg:pt-16">
             <figure className="flex-1 order-2 overflow-hidden max-h-[650px] lg:max-h-max lg:order-none">
               <img src={Anita} alt="Anita Lever" />
             </figure>
-            <article className="z-10 flex flex-col items-center justify-center flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto lg:items-start">
+            <motion.article
+              initial={{ opacity: 0, y: '-80%' }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: '-80%' }}
+              transition={transition1}
+              className="z-10 flex flex-col items-center justify-center flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto lg:items-start">
               <h1 className="h1">About me</h1>
               <p className="mb-6">
                 My name is Anita Lever, a User Experience Designer. I am a graduate of computer science at the National Open University Of Nigeria. I am also a certified UX Designer (Google UX Design Professional certification).
@@ -29,10 +42,10 @@ const About = () => {
               </p>
               
               <Link to={'/portfolio'} className='mt-6 btn'>View my work</Link>
-            </article>
+            </motion.article>
           </div>
         </div>
-      </section>
+      </motion.section>
   );
 };
 

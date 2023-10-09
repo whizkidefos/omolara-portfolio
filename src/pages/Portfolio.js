@@ -7,9 +7,18 @@ import Fintech from '../img/portfolio/fintech.png';
 
 import { Link } from 'react-router-dom';
 
+import { motion } from 'framer-motion';
+import { transition1 } from '../transitions';
+
 const Portfolio = () => {
-  return <section className='section'>
-    <div className="container relative h-full mx-auto">
+  return (
+  <motion.section
+    initial={{ opacity: 0, y: '100%' }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: '100%' }}
+    transition={transition1}
+    className='section'>
+    <div className="container relative h-full pb-10 mx-auto">
       <div className="flex flex-col items-center justify-start h-full pt-24 pb-8 text-center lg:flex-row gap-x-24 lg:text-left lg:pt-36">
         
         <article className="flex flex-col lg:items-center">
@@ -53,7 +62,8 @@ const Portfolio = () => {
         </figure>
       </div>
     </div>
-  </section>;
+  </motion.section>
+  );
 };
 
 export default Portfolio;
