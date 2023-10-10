@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ImLinkedin, ImBehance, ImTwitter, ImInstagram, ImDribbble, ImFacebook } from 'react-icons/im';
+// import { ImLinkedin, ImBehance, ImTwitter, ImInstagram, ImDribbble, ImFacebook } from 'react-icons/im';
 import { AiFillBehanceCircle, AiFillDribbbleCircle, AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
 import { CursorContext } from '../context/CursorContext';
 
@@ -19,7 +19,7 @@ const Socials = () => {
         </li>
 
         <li className="">
-          <a className='text-[#696c6d] hover:text-primary transition' href="https://dribbble.com/Lever101" target="_blank" rel="noopener noreferrer">
+          <a className='text-[#696c6d] hover:text-primary hover:scale-105 transition' href="https://dribbble.com/Lever101" target="_blank" rel="noopener noreferrer">
             <AiFillDribbbleCircle className='text-[24px] rounded-full' />
           </a>
         </li>

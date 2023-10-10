@@ -6,6 +6,7 @@ import { CgMenuRight } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ImLinkedin, ImBehance, ImTwitter, ImInstagram, ImDribbble, ImFacebook } from 'react-icons/im';
+import { AiFillBehanceCircle, AiFillDribbbleCircle, AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai';
 import { CursorContext } from '../context/CursorContext';
 
 const menuVariants = {
@@ -64,38 +65,38 @@ const MobileNav = () => {
         {/* Socials lnks */}
         <ul className="absolute flex justify-center w-full text-center gap-x-3 bottom-10 justify-self-center">
         <li className="">
-          <a href="https://www.behance.net/anitalever" target="_blank" rel="noopener noreferrer">
-            <ImBehance />
+          <a className='text-[#696c6d] hover:text-primary transition' href="https://www.behance.net/anitalever" target="_blank" rel="noopener noreferrer">
+            <AiFillBehanceCircle className='text-[24px] rounded-full' />
           </a>
         </li>
 
         <li className="">
-          <a href="https://dribbble.com/Lever101" target="_blank" rel="noopener noreferrer">
-            <ImDribbble />
+          <a className='text-[#696c6d] hover:text-primary hover:scale-105 transition' href="https://dribbble.com/Lever101" target="_blank" rel="noopener noreferrer">
+            <AiFillDribbbleCircle className='text-[24px] rounded-full' />
           </a>
         </li>
 
         <li className="">
-          <a href="https://www.linkedin.com/in/anita-lever-bb35a1209/" target="_blank" rel="noopener noreferrer">
-            <ImLinkedin />
+          <a className='text-[#696c6d] hover:text-primary transition' href="https://www.linkedin.com/in/anita-lever-bb35a1209/" target="_blank" rel="noopener noreferrer">
+            <AiFillLinkedin className='text-[24px] rounded-full' />
           </a>
         </li>
 
         <li className="">
-          <a href="https://www.instagram.com/anita_lever/" target="_blank" rel="noopener noreferrer">
-            <ImInstagram />
+          <a className='text-[#696c6d] hover:text-primary transition' href="https://www.instagram.com/anita_lever/" target="_blank" rel="noopener noreferrer">
+            <AiFillInstagram className='text-[24px] rounded-full' />
           </a>
         </li>
 
         <li className="">
-          <a href="https://twitter.com/anita_lever" target="_blank" rel="noopener noreferrer">
-            <ImTwitter />
+          <a className='text-[#696c6d] hover:text-primary transition' href="https://twitter.com/anita_lever" target="_blank" rel="noopener noreferrer">
+            <AiFillTwitterCircle className='text-[24px] rounded-full' />
           </a>
         </li>
 
         <li className="">
-          <a href="https://www.facebook.com/lever.anita" target="_blank" rel="noopener noreferrer">
-            <ImFacebook />
+          <a className='text-[#696c6d] hover:text-primary transition' href="https://www.facebook.com/lever.anita" target="_blank" rel="noopener noreferrer">
+            <AiFillFacebook className='text-[24px] rounded-full' />
           </a>
         </li>
       </ul>
