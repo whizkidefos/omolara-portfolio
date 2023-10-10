@@ -26,7 +26,7 @@ const Contact = () => {
           <p className="mb-12">
             I’m always open to new opportunities and collaborations. Whether you need a UX/UI designer for your next project, or just want to chat about design, feel free to get in touch with me.
 
-            You can reach me by email at anita_lever@gmail.com, or by filling the short form below. You can also find me on social media platforms such as [LinkedIn], [Twitter], and [Behance] using the icons above.
+            You can reach me by email at anita_lever@gmail.com, or by filling the short form below. You can also find me on social media platforms such as <strong>LinkedIn</strong>, <strong>Dribble</strong>, and <strong>Behance</strong> using the icons above.
 
             I look forward to hearing from you soon! 😊
           </p>

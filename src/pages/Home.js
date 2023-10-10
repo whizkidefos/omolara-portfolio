@@ -15,7 +15,7 @@ const Home = () => {
       exit={{ opacity: 0 }}
       transition={transition1}
       className='section'>
-      <div className="container relative h-full pb-10 mx-auto">
+      <div className="container relative h-full pb-10 mx-auto lg:overflow-hidden">
         {/* HP Banner wrapper */}
         <div className="flex flex-col justify-center">
           <motion.article 

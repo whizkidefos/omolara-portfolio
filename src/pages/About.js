@@ -32,9 +32,9 @@ const About = () => {
               className="z-10 flex flex-col items-center justify-center flex-1 px-4 pt-44 pb-14 lg:pt-32 lg:w-auto lg:items-start">
               <h1 className="h1">About me</h1>
               <p className="mb-6">
-                My name is Anita Lever, a User Experience Designer. I am a graduate of computer science at the National Open University Of Nigeria. I am also a certified UX Designer (Google UX Design Professional certification).
+                Anita Lever is a User Experience Designer with a degree in computer science and a Google UX Design Professional certification. She has more than two years of experience in designing websites and mobile applications, using research methods, design systems, micro-interactions, and prototypes. She is passionate about creating simple and engaging solutions for users and businesses, and she is always eager to learn new skills and work on exciting projects. She also enjoys jogging, cooking, watching movies, playing candycrush, researching, and spending time with loved ones in her spare time.
               </p>
-              <br />
+              {/* <br />
               <p className="">
                 With over 2+ years of expertise, my portfolio includes my research methods, User Interface Design for Websites and Mobile Applications, Micro-interaction, and prototypes.
 
@@ -44,7 +44,7 @@ const About = () => {
                 On top of that, I enjoy learning new skills and working on exciting things.
 
                 Apart from design, in my spare time, I like to go Jogging, Cooking, watch movies, play candycrush, research, and spend time with loved ones.
-              </p>
+              </p> */}
               
               <Link to={'/portfolio'} className='mt-6 btn'>View my work</Link>
             </motion.article>
