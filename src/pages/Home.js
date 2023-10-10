@@ -25,7 +25,7 @@ const Home = () => {
             transition={transition1}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="z-10 flex flex-col items-center justify-center w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto lg:absolute lg:items-start">
+            className="z-10 flex flex-col items-center justify-center w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto lg:absolute lg:items-start lg:-mt-52">
       
             <h1 className="text-center h1 lg:text-left">A Flexible <br />UI & UX Designer.</h1>
             <p className="text-[26px] lg:text-[36] mb-4 lg:mb-12">Lagos, Nigeria.</p>
