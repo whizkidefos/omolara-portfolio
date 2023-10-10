@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Wise from '../img/portfolio/wise.png';
 import ITFirm from '../img/portfolio/itfirm.png';
@@ -9,8 +9,11 @@ import { Link } from 'react-router-dom';
 
 import { motion } from 'framer-motion';
 import { transition1 } from '../transitions';
+import { CursorContext } from '../context/CursorContext';
 
 const Portfolio = () => {
+  const { handleMouseEnter, handleMouseLeave } = useContext(CursorContext);
+
   return (
   <motion.section
     initial={{ opacity: 0, y: '100%' }}
@@ -21,7 +24,10 @@ const Portfolio = () => {
     <div className="container relative h-full pb-10 mx-auto">
       <div className="flex flex-col items-center justify-start h-full pt-24 pb-8 text-center lg:flex-row gap-x-24 lg:text-left lg:pt-36">
         
-        <article className="flex flex-col lg:items-center">
+        <article 
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="flex flex-col lg:items-center">
           <h1 className="h1">Portfolio</h1>
           <p className="max-w-sm mb-12">
             My passion for Designing Impactful And Intuitive
@@ -30,7 +36,10 @@ const Portfolio = () => {
           <Link to={'/contact'} className="btn mb-[30px] mx-auto lg:mx-0">Hire Me</Link>
         </article>
 
-        <figure className="grid grid-cols-2 lg:gap-2">
+        <figure 
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="grid grid-cols-2 lg:gap-2">
           {/* Portfolio item */}
           <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
             <a href="https://www.behance.net/gallery/162270163/Wardrobewise-case-study-(fashion-store)" target="_blank" rel="noopener noreferrer">

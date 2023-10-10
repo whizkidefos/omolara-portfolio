@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { ImLinkedin, ImBehance, ImTwitter, ImInstagram, ImDribbble, ImFacebook } from 'react-icons/im';
+import { CursorContext } from '../context/CursorContext';
 
 const Socials = () => {
+  const { handleMouseEnter, handleMouseLeave } = useContext(CursorContext);
+  
   return (
     <aside className='hidden ml-24 xl:flex'>
-      <ul className="flex gap-x-3">
+      <ul 
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className="flex gap-x-3">
         <li className="">
           <a href="https://www.behance.net/anitalever" target="_blank" rel="noopener noreferrer">
             <ImBehance />

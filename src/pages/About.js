@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Anita from '../img/about/anita-about.png';
 
 import { motion } from 'framer-motion';
 import { transition1 } from '../transitions';
+import { CursorContext } from '../context/CursorContext';
 
 const About = () => {
+  const { handleMouseEnter, handleMouseLeave } = useContext(CursorContext);
+
   return (
       <motion.section 
         initial={{ opacity: 0, y: '100%' }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: '100%' }}
         transition={transition1}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         className='section'>
         <div className="container relative h-full pb-10 mx-auto">
           {/* About Banner wrapper */}

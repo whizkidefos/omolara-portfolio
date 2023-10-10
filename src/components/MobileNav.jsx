@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 
 import { IoMdClose } from 'react-icons/io';
 import { CgMenuRight } from 'react-icons/cg';
@@ -6,6 +6,7 @@ import { CgMenuRight } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ImLinkedin, ImBehance, ImTwitter, ImInstagram, ImDribbble, ImFacebook } from 'react-icons/im';
+import { CursorContext } from '../context/CursorContext';
 
 const menuVariants = {
   hidden: {
@@ -24,17 +25,23 @@ const menuVariants = {
 
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const { handleMouseEnter, handleMouseLeave } = useContext(CursorContext);
+
   return (
     <nav className='text-primary xl:hidden'>
       {/* Nav open button */}
-      <div 
+      <div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         onClick={() => setOpenMenu(!openMenu)}
         className="text-3xl cursor-pointer">
         <CgMenuRight />
       </div>
 
       {/* Menu */}
-      <motion.div 
+      <motion.div
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         variants={menuVariants}
         initial="hidden"
         animate={openMenu ? 'visible' : 'hidden'}
