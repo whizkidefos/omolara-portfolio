@@ -39,9 +39,9 @@ const Portfolio = () => {
         <figure 
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className="grid grid-cols-2 lg:gap-2">
+          className="grid gap-2 pb-10 mb-5 md:grid-cols-2 sm:grid-cols-1">
           {/* Portfolio item */}
-          <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
+          <div className="sm:max-w-full md:max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
             <a href="https://www.behance.net/gallery/162270163/Wardrobewise-case-study-(fashion-store)" target="_blank" rel="noopener noreferrer">
               <img src={Wise} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>

@@ -15,7 +15,7 @@ const App = () => {
       <Router>
         <Header />
         <AnimRoutes />
-        <Footer />
+        {/* <Footer /> */}
       </Router>
 
       {/* Cursor */}

@@ -18,18 +18,18 @@ const About = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         className='section'>
-        <div className="container relative h-full pb-10 mx-auto">
+        <div className="container pb-10 mx-auto">
           {/* About Banner wrapper */}
           <div className="flex flex-col items-center justify-center h-full text-center lg:flex-row gap-x-24 lg:text-left lg:pt-16">
-            <figure className="flex-1 order-2 overflow-hidden max-h-[650px] lg:max-h-max lg:order-none">
-              <img src={Anita} alt="Anita Lever" />
+            <figure className="flex-1 order-2 max-h-[650px] lg:max-h-max lg:order-none pt-12 pb-4 lg:pt-36">
+              <img src={Anita} alt="Anita Lever" className='object-cover w-full' />
             </figure>
             <motion.article
               initial={{ opacity: 0, y: '-80%' }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: '-80%' }}
               transition={transition1}
-              className="z-10 flex flex-col items-center justify-center flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto lg:items-start">
+              className="z-10 flex flex-col items-center justify-center flex-1 px-4 pt-44 pb-14 lg:pt-32 lg:w-auto lg:items-start">
               <h1 className="h1">About me</h1>
               <p className="mb-6">
                 My name is Anita Lever, a User Experience Designer. I am a graduate of computer science at the National Open University Of Nigeria. I am also a certified UX Designer (Google UX Design Professional certification).

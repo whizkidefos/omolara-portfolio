@@ -11,7 +11,7 @@ const Header = () => {
   const { handleMouseEnter, handleMouseLeave } = useContext(CursorContext);
 
   return (
-    <header className='fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center'>
+    <header className='fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center bg-white lg:bg-transparent'>
       <div 
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

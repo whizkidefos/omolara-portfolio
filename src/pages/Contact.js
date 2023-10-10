@@ -17,7 +17,7 @@ const Contact = () => {
     <div className="container h-full pb-10 mx-auto">
       <div className="flex flex-col items-center justify-start h-full text-center lg:flex-row pt-36 gap-x-8 lg:text-left">
 
-        <figure className="hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 right-0 top-72 -z-10"></figure>
+        <figure className="hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 right-0 top-80 -z-10"></figure>
 
         {/* Text and form */}
         <div 
