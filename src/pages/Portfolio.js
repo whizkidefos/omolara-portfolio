@@ -48,21 +48,21 @@ const Portfolio = () => {
           </div>
 
           {/* Portfolio item */}
-          <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
+          <div className="sm:max-w-full md:max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
             <a href="https://www.behance.net/gallery/131739525/IT-firm-website-(-LUWANG-INDUSTRIES)" target="_blank" rel="noopener noreferrer">
               <img src={ITFirm} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
 
           {/* Portfolio item */}
-          <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
+          <div className="sm:max-w-full md:max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
             <a href="https://www.behance.net/gallery/157556087/Medcare-case-study" target="_blank" rel="noopener noreferrer">
               <img src={MedCareFoods} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
 
           {/* Portfolio item */}
-          <div className="max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
+          <div className="sm:max-w-full md:max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
             <a href="https://www.behance.net/gallery/125186599/Fintech-app-(Bank-app)" target="_blank" rel="noopener noreferrer">
               <img src={Fintech} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
