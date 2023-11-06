@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 
 import { motion } from 'framer-motion';
 import { transition1 } from '../transitions';
@@ -31,17 +31,17 @@ const Contact = () => {
             I look forward to hearing from you soon! 😊
           </p>
 
-          <form action="" 
+          <form target='_blank' action="https://formsubmit.co/anitalever101@gmail.com" method="POST"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             className='flex flex-col gap-y-4'>
             <div className="flex flex-wrap gap-x-10">
-              <input type="text" className="border-b outline-none border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]" placeholder='Your name' />
+              <input type="text" name="name" className="border-b outline-none border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]" placeholder='Your name' required />
 
-              <input type="email" className="border-b outline-none border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]" placeholder='Your email address' />
+              <input type="email" name="email" className="border-b outline-none border-b-primary h-[60px] bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]" placeholder='Your email address' required />
             </div>
 
-            <textarea name="" id="" cols="30" rows="5" className="border-b outline-none border-b-primary bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]" placeholder='Your message'></textarea>
+            <textarea name="message" id="" cols="30" rows="5" className="border-b outline-none border-b-primary bg-transparent font-secondary w-full pl-3 placeholder:text-[#757879]" placeholder='Your message' required></textarea>
 
             <button className="mx-auto btn mb-[30px] mt-5">Send it</button>
             
