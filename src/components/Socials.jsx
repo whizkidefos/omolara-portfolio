@@ -5,10 +5,10 @@ import { CursorContext } from '../context/CursorContext';
 
 const Socials = () => {
   const { handleMouseEnter, handleMouseLeave } = useContext(CursorContext);
-  
+
   return (
     <aside className='hidden ml-24 xl:flex'>
-      <ul 
+      <ul
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         className="flex gap-x-3">
@@ -42,11 +42,11 @@ const Socials = () => {
           </a>
         </li>
 
-        <li className="">
+        {/* <li className="">
           <a className='text-[#696c6d] hover:text-primary transition' href="https://www.facebook.com/lever.anita" target="_blank" rel="noopener noreferrer">
             <AiFillFacebook className='text-[24px] rounded-full' />
           </a>
-        </li>
+        </li> */}
       </ul>
     </aside>
   );
