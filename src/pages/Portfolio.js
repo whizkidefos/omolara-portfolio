@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 
-import Wise from '../img/portfolio/wise.png';
-import ITFirm from '../img/portfolio/itfirm.png';
-import MedCareFoods from '../img/portfolio/medcarefoods.png';
-import Fintech from '../img/portfolio/fintech.png';
+import BabyAffairs from '../img/portfolio/baby-affairs.png';
+import CarAuction from '../img/portfolio/car-auction-mobile-app.png';
+import MayaRestaurant from '../img/portfolio/maya-restaurant.png';
+import Tookuai from '../img/portfolio/tookuai.png';
 
 import { Link } from 'react-router-dom';
 
@@ -40,31 +40,31 @@ const Portfolio = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           className="grid gap-2 pb-10 mb-5 md:grid-cols-2 sm:grid-cols-1">
-          {/* Portfolio item */}
+          {/* Portfolio item 1 */}
           <div className="sm:max-w-full md:max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-            <a href="https://www.behance.net/gallery/162270163/Wardrobewise-case-study-(fashion-store)" target="_blank" rel="noopener noreferrer">
-              <img src={Wise} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
+            <a href="https://www.behance.net/gallery/187170731/RiderPassenger-Mobile-App-(Taxify-Uber)" target="_blank" rel="noopener noreferrer">
+              <img src={Tookuai} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
 
-          {/* Portfolio item */}
+          {/* Portfolio item 2 */}
           <div className="sm:max-w-full md:max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-            <a href="https://www.behance.net/gallery/131739525/IT-firm-website-(-LUWANG-INDUSTRIES)" target="_blank" rel="noopener noreferrer">
-              <img src={ITFirm} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
+            <a href="https://www.behance.net/gallery/187172921/Baby-Affairs-(First-time-parenting-mobile-app)" target="_blank" rel="noopener noreferrer">
+              <img src={BabyAffairs} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
 
-          {/* Portfolio item */}
+          {/* Portfolio item 3 */}
           <div className="sm:max-w-full md:max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-            <a href="https://www.behance.net/gallery/157556087/Medcare-case-study" target="_blank" rel="noopener noreferrer">
-              <img src={MedCareFoods} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
+            <a href="https://www.behance.net/gallery/145560937/Restaurant-website-waitlist" target="_blank" rel="noopener noreferrer">
+              <img src={MayaRestaurant} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
 
-          {/* Portfolio item */}
+          {/* Portfolio item 4 */}
           <div className="sm:max-w-full md:max-w-[250px] lg:max-w-[320px] h-[187px] lg:h-[220px] bg-accent overflow-hidden">
-            <a href="https://www.behance.net/gallery/125186599/Fintech-app-(Bank-app)" target="_blank" rel="noopener noreferrer">
-              <img src={Fintech} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
+            <a href="https://www.behance.net/gallery/184164957/Car-Auction-Mobile-App-(Redesign)" target="_blank" rel="noopener noreferrer">
+              <img src={CarAuction} alt="portfolio preview" className='object-cover h-full w-full lg-[220px] hover:scale-105 transition-all duration-500' />
             </a>
           </div>
 
